@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #main-title {
+            color: blue;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        h2, p {
+            margin-bottom: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        div p {
+            color: green;
+            font-weight: bold;
+        }
+
+        h2 p {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            border: 1px solid blue;
+        }
+
+        p:first-child {
+            font-weight: bold;
+        }
+
+        li:last-child {
+            font-style: italic;
+        }
+
+        li:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: darkred;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        ::selection {
+            background-color: cyan;
+        }
+
+        input[type="text"] {
+            border: 1px solid gray;
+        }
+
+        a[target="_blank"] {
+            color: orange;
+        }
+
+        #data-info {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">CSS Selector Demonstration</h1>
+    <h2>Simple Selectors</h2>
+    <p class="highlight">This is a paragraph</p>
+    <h2>Combinator Selectors</h2>
+    <div>
+        <p>This is a descendant</p>
+        <p>Direct child</p>
+    </div>
+    <h2>Adjacent and General Sibling Selectors</h2>
+    <p>This para comes after h2 (adjacent)</p>
+    <p>This para is also a sibling</p>
+    <h2>Pseudo Class</h2>
+    <a href="#">Hover over this link</a>
+    <input type="text" placeholder="Focus here">
+</body>
+</html>

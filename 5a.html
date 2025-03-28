@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demonstrating Various Ways of Referencing Color in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .color-box {
+            width: 300px;
+            height: 100px;
+            margin: 10px auto;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+        }
+        .named-color { background-color: blue; } /* Named color */
+        .hex-color { background-color: #ff5733; } /* Hex color */
+        .rgb-color { background-color: rgb(60, 179, 113); } /* RGB color */
+        .rgba-color { background-color: rgba(255, 99, 71, 0.5); color: black; } /* RGBA with transparency */
+        .hsl-color { background-color: hsl(120, 100%, 25%); } /* HSL color */
+        .hsla-color { background-color: hsla(240, 100%, 50%, 0.5); } /* HSLA with transparency */
+    </style>
+</head>
+<body>
+    <h1>CSS Color References</h1>
+    <div class="color-box named-color">Named Color (Blue)</div>
+    <div class="color-box hex-color">Hex Color (#ff5733)</div>
+    <div class="color-box rgb-color">RGB Color (60, 179, 113)</div>
+    <div class="color-box rgba-color">RGBA Color (255, 99, 71, 0.5)</div>
+    <div class="color-box hsl-color">HSL Color (120, 100%, 25%)</div>
+    <div class="color-box hsla-color">HSLA Color (240, 100%, 50%, 0.5)</div>
+</body>
+</html>
