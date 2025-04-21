@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GEO LOCATION API</title>
+</head>
+<body>
+    <button onclick="getLocation()">Get Location</button>
+    <p id="mslocation"></p>
+
+    <script type="text/javascript">
+        var msg = document.getElementById("mslocation");
+
+        function success(position) {
+            const crd = position.coords;
+            msg.innerHTML = "Latitude: " + crd.latitude + "<br>" +
+                            "Longitude: " + crd.longitude + "<br>" +
+                            "Accuracy: " + crd.accuracy + " meters";
+        }
+
+        function error(err) {
+            msg.innerHTML = "Error: " + err.message;
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                msg.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+    </script>
+</body>
+</html>
