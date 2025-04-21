@@ -1,0 +1,93 @@
+h1{
+    text-align: center;
+    background-color: antiquewhite;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+p{
+    text-align: center;
+    
+}
+.font1 p
+{
+    font-size: 25px;
+    background-color: antiquewhite;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font2 p:nth-child(1) {
+    font-weight: lighter;
+    background-color: red;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font2 p:nth-child(2) {
+    font-weight: bold;
+    background-color: greenyellow;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font2 p:nth-child(3) {
+    font-weight: 900;
+    background-color: palevioletred;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font3
+{
+    font-style: italic;
+    background-color: grey;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+.font4 p{
+    text-decoration: underline;
+    background-color: goldenrod;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font5 p{
+    text-transform: uppercase;
+    background-color: violet;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font5 h4{
+    text-align: center;
+    background-color: violet;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.font6 h5{
+    background-color: grey;
+    width: auto;
+    height: auto;
+}
+.font6 p{
+    text-align: center;
+    background-color: grey;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    color:yellow;
+}
