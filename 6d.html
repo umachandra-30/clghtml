@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voter Eligibility</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+table {
+  width: 60%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
+th {
+  background-color: #f0f0f0;
+}
+</style>
+</head>
+<body>
+<h2>Voter Eligibility Check</h2>
+<table id="voterTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Eligibility</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script>
+const name = prompt("Enter your name:");
+const age = parseInt(prompt("Enter your age:"), 10);
+
+// Determine voting eligibility
+let eligibility = "Not Eligible to Vote";
+if (!isNaN(age) && age >= 18) {
+  eligibility = "Eligible to Vote";
+}
+
+// Insert data into table
+const table = document.getElementById("voterTable");
+const tbody = table.getElementsByTagName('tbody')[0];
+const newRow = tbody.insertRow();
+
+const nameCell = newRow.insertCell(0);
+const ageCell = newRow.insertCell(1);
+const eligibilityCell = newRow.insertCell(2);
+
+nameCell.textContent = name || "Unknown";
+ageCell.textContent = isNaN(age) ? "Invalid" : age;
+eligibilityCell.textContent = eligibility;
+</script>
+</body>
+</html>

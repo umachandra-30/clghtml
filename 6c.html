@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Example</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something" />
+  <button onclick="getInputFromHTML()">Submit</button>
+
+  <script>
+    let name = prompt("Enter your name:");
+    console.log("Hello, " + name);
+    function getInputFromHTML() {
+      const input = document.getElementById("userInput").value;
+      console.log("Input from HTML: " + input);
+      alert("You entered: " + input);
+    }
+  </script>
+</body>
+</html>
